@@ -6,7 +6,7 @@ rule "StaffRoleUpdate"
 	dialect "mvel"
 	ruleflow-group "staffroleupdate"
 	when
-		varStaff : Staff( staffRole == null || ( staffName == "Sam" && staffNumber == 8888 ))
+		varStaff : Staff( staffRole == null || ( staffName == "Sam" && staffNumber == 065674 ))
 	then
 		varStaff.setStaffRole( "Lecturer" );
 end
