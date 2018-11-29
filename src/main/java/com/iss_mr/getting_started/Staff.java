@@ -8,10 +8,13 @@ public class Staff implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Staff Number")
+	@org.kie.api.definition.type.Label("Staff Number")
 	private java.lang.Integer staffNumber;
-	@org.kie.api.definition.type.Label(value = "Staff Name")
+	@org.kie.api.definition.type.Label("Staff Name")
 	private java.lang.String staffName;
+
+	@org.kie.api.definition.type.Label(value = "Staff Role")
+	private java.lang.String staffRole;
 
 	public Staff() {
 	}
@@ -32,9 +35,19 @@ public class Staff implements java.io.Serializable {
 		this.staffName = staffName;
 	}
 
-	public Staff(java.lang.Integer staffNumber, java.lang.String staffName) {
+	public java.lang.String getStaffRole() {
+		return this.staffRole;
+	}
+
+	public void setStaffRole(java.lang.String staffRole) {
+		this.staffRole = staffRole;
+	}
+
+	public Staff(java.lang.Integer staffNumber, java.lang.String staffName,
+			java.lang.String staffRole) {
 		this.staffNumber = staffNumber;
 		this.staffName = staffName;
+		this.staffRole = staffRole;
 	}
 
 }
