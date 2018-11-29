@@ -6,12 +6,35 @@ package com.iss_mr.getting_started;
 
 public class Staff implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Staff() {
-    }
+	@org.kie.api.definition.type.Label(value = "Staff Number")
+	private java.lang.Integer staffNumber;
+	@org.kie.api.definition.type.Label(value = "Staff Name")
+	private java.lang.String staffName;
 
+	public Staff() {
+	}
 
+	public java.lang.Integer getStaffNumber() {
+		return this.staffNumber;
+	}
 
+	public void setStaffNumber(java.lang.Integer staffNumber) {
+		this.staffNumber = staffNumber;
+	}
+
+	public java.lang.String getStaffName() {
+		return this.staffName;
+	}
+
+	public void setStaffName(java.lang.String staffName) {
+		this.staffName = staffName;
+	}
+
+	public Staff(java.lang.Integer staffNumber, java.lang.String staffName) {
+		this.staffNumber = staffNumber;
+		this.staffName = staffName;
+	}
 
 }
