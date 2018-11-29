@@ -1,0 +1,9 @@
+package com.iss_mr.getting_started;
+
+import java.lang.Number;
+
+rule "StaffRoleUpdate"
+	dialect "mvel"
+	when
+	then
+end
